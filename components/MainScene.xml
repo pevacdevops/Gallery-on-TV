@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--******* Gallery on TV by PeVaC ********-->
+<component name="MainScene" extends="Scene"> 
+<script type="text/brightscript" uri = "pkg:/components/MainScene.brs"/>
+<script type="text/brightscript" uri = "pkg:/components/Logic/ContentTaskLogic.brs"/>
+<script type="text/brightscript" uri = "pkg:/source/utils.brs"/>
+	<children>
+      <Overhang
+        id="overhang"
+        showOptions="true"
+        showClock="false"
+        logoUri="pkg:/images/hd_overhang_logo.png"
+        translation="[0,60]"
+      />
+      <Label
+        id="loadingIndicator"
+        text="Checking Gallery . . ."
+        width="1920"
+        height="1080"
+        translation="[0, 0]"
+        horizAlign="center"
+        vertAlign="center"
+        visible="false"
+        font="font:MediumBoldSystemFont"
+      />
+      <Label id="galDescription" 
+        text="Gallery (GalleryProject.org) is an open source web based photo album organizer. Download and install a new instance to your self-hosted server. The default address below points to one such example. A detailed guide is available at our website (https://gallery.adreca.net)."
+        maxLines="3"
+        wrap="true"
+        width="1800" 
+        height="200" 
+        horizAlign="left"
+        vertAlign="center"
+        translation="[30,250]"
+        font="font:SmallSystemFont"
+      />
+      <Label id="galDescriptionMore" 
+        text="Roku pauses before starting the screen saver. Change screensaver setting (RokuTV > Settings > Theme > Screensaver Time) if necessary. "
+        maxLines="2"
+        wrap="true"
+        width="1800" 
+        height="200" 
+        horizAlign="left"
+        vertAlign="center"
+        translation="[30,400]"
+        font="font:SmallSystemFont"
+      />
+      <Label id="galUrl" 
+        text="Replace URL below with the URL from your Gallery RSS feed. Save and reload app. Press DOWN to start replacing the URL. Press * to change time duration of each photo."
+        maxLines="2"
+        wrap="true"
+        width="1800" 
+        height="100" 
+        horizAlign="left"
+        vertAlign="center"
+        translation="[30,600]"
+        color="0xeda411ff"
+        font="font:MediumSystemFont"
+      />
+      <Label 
+        id = "rssUrl"
+        translation="[60,765]"
+        width="1280"
+      />
+      <Button
+        id = "rssButton"
+        text = "Replace&#xA0;&#xA0;&#xA0;&#xA0;"
+        textColor="0xeda411ff"
+        showFocusFootprint = "true"
+        minWidth = "317"
+        translation="[1430,725]"
+        maxWidth="318"
+        height="100"
+        iconUri="" 
+      />
+      <Label id="footer" 
+      	text="PeVaC DevOps"
+      	width="1850" 
+      	height="100" 
+      	horizAlign="right"
+      	vertAlign="center"
+        translation="[20,1000]"
+        font="font:MediumBoldSystemFont"
+      />
+    </children>
+</component>

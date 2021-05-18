@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--******* Gallery on TV by PeVaC ********-->
+
+<component name="MainLoaderTask" extends="Task">
+    <interface>
+        <field id="content" type="array" />
+    </interface>
+
+    <script type="text/brightscript" uri="MainLoaderTask.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+</component>
